@@ -420,6 +420,9 @@ class _SignUpPageState extends State<SignUpPage> {
                   actions: [
                     FlatButton(
                         onPressed: () {
+                               setState(() {
+                            isLoading=false;
+                          });
                           Navigator.pop(context);
                         },
                         child: Text("ok"))
